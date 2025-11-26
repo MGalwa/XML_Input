@@ -20,7 +20,7 @@ import json  # Allows JSON file processing (reading and writing)
 class JsonProcessor:
     def __init__(self):
         # Define the path to the JSON input file
-        self.json_file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input\\input.json"
+        self.json_file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input\input.json"
 
         # Define default JSON structures for all record types
         self.default_json_structure_news = {
