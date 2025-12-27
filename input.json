@@ -1,0 +1,12 @@
+{
+    "records": [
+        {
+            "text": "Example: Today it's sunny!",
+            "city": "Gliwice"
+        },
+        {
+            "text": "Example: Today it's rainy!",
+            "city": "Katowice"
+        }
+    ]
+}
