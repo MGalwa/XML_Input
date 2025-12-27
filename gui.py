@@ -1,11 +1,11 @@
 # Magdalena Galwa
-# 15/10/2025
+# 26/11/2025
 # Description:
 #Homework:
-    # Expand previous Homework 5/6/7/8 with additional class, which allow to provide records by XML file:
-    # Define your input format (one or many records)
-    # Default folder or user provided file path
-    # Remove file if it was successfully processed
+    # Expand previous Homework 5/6/7/8/9 with additional class, which allow to save records into database:
+    # 1. Different types of records require different data tables
+    # 2. New record creates new row in data table
+    # 3. Implement “no duplicate” check.
 
 # Import statements
 from datetime import datetime  # Used for working with dates and times
@@ -17,21 +17,22 @@ class GUI:
         print("=== News Feed Tool ===")  # Title of the application
         print("Choose how you would like to provide the data:")  # Explain input options
         print("1 - Enter data manually through the console.")  # Option 1: Manual input
-        print(r"2 - Provide data using a TXT input file located at: C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input")  # Option 2: TXT file
-        print(r"3 - Provide data using a JSON input file located at: C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input")  # Option 3: JSON file
-        print(r"4 - Provide data using an XML input file located at: C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input")  # Option 4: XML file
+        print(r"2 - Provide data using a TXT input file located at: C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input")  # Option 2: TXT file
+        print(r"3 - Provide data using a JSON input file located at: C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input")  # Option 3: JSON file
+        print(r"4 - Provide data using an XML input file located at: C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input")  # Option 4: XML file
+        print(r"5 - Provide data using Database connection.")  # Option 5: Database connection
 
     def get_user_choice_input_type(self):
         # Ask the user how they would like to provide the data (Console, TXT, JSON)
         while True:
             try:
-                choice_input_type = int(input("Enter your choice (input type) (1, 2, 3, 4): "))  # Get user input
-                if choice_input_type in [1, 2, 3, 4]:  # Validate that the choice is valid
+                choice_input_type = int(input("Enter your choice (input type) (1, 2, 3, 4, 5): "))  # Get user input
+                if choice_input_type in [1, 2, 3, 4, 5]:  # Validate that the choice is valid
                     return choice_input_type  # Return the user's selection
                 else:
-                    print("Invalid choice. Please select 1, 2, 3 or 4.")  # Error for invalid input
+                    print("Invalid choice. Please select 1, 2, 3, 4 or 5.")  # Error for invalid input
             except ValueError:
-                print("Invalid input. Please enter the number 1, 2, 3 or 4")  # Handle non-integer input
+                print("Invalid input. Please enter the number 1, 2, 3, 4 or 5")  # Handle non-integer input
 
     def get_user_choice_feed_type(self):
         # Ask the user to choose the type of record (News, Private Ad, or Book Review)

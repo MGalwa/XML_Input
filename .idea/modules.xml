@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/XML_Input.iml" filepath="$PROJECT_DIR$/.idea/XML_Input.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DB_Input.iml" filepath="$PROJECT_DIR$/.idea/DB_Input.iml" />
     </modules>
   </component>
 </project>

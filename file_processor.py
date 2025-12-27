@@ -1,12 +1,11 @@
 # Magdalena Galwa
-# 15/10/2025
+# 26/11/2025
 # Description:
 #Homework:
-    # Expand previous Homework 5/6/7/8 with additional class, which allow to provide records by XML file:
-    # Define your input format (one or many records)
-    # Default folder or user provided file path
-    # Remove file if it was successfully processed
-
+    # Expand previous Homework 5/6/7/8/9 with additional class, which allow to save records into database:
+    # 1. Different types of records require different data tables
+    # 2. New record creates new row in data table
+    # 3. Implement “no duplicate” check.
 
 # Imported files
 import feed_types
@@ -19,10 +18,10 @@ from datetime import datetime  # Used for working with dates and times
 class FileProcessor:
     def __init__(self):
         # Paths to the input and output files
-        self.input_file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input\input.txt"
+        self.input_file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input\input.txt"
         self.output_file_path = "output.txt"  # Path to the main output file
 
-    def create_input_file(self, choice):
+    def initialize_txt_file(self, choice):
         # Create an input TXT file with an example based on the user's category choice
         examples = {
             1: "Today it's raining. Take your umbrella.;Gliwice",  # Example for News

@@ -1,13 +1,13 @@
 # Magdalena Galwa
-# 15/10/2025
+# 26/11/2025
 # Description:
 #Homework:
-    # Expand previous Homework 5/6/7/8 with additional class, which allow to provide records by XML file:
-    # Define your input format (one or many records)
-    # Default folder or user provided file path
-    # Remove file if it was successfully processed
+    # Expand previous Homework 5/6/7/8/9 with additional class, which allow to save records into database:
+    # 1. Different types of records require different data tables
+    # 2. New record creates new row in data table
+    # 3. Implement “no duplicate” check.
 
-#Import files
+#Imported files
 import gui
 
 # The User class manages user input and selections
@@ -29,5 +29,9 @@ class User:
                 return self.gui.get_book_review_params()  # Collect parameters for Book Review
         elif self.choice_input_type == 2:  # TXT file input
             print("\nA default input file will be created in:")  # Inform the user about the file path
-            print(r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input\input.txt")
+            print(r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input\input.txt")
+            print("After filling the file, you can process it.")  # Instruct the user to fill the file
+        elif self.choice_input_type == 2:  # TXT file input
+            print("\nA default input file will be created in:")  # Inform the user about the file path
+            print(r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input\input.txt")
             print("After filling the file, you can process it.")  # Instruct the user to fill the file
