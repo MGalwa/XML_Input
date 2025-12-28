@@ -1,0 +1,40 @@
+News Feed App
+
+Private Ad ------------------------
+Example: I'm selling a bike!
+Actual until: 2025-12-12, 52 days left
+
+Private Ad ------------------------
+Example: I'm selling a cat!
+Actual until: 2025-12-15, 55 days left
+
+News ------------------------
+loool. it's sunny! 
+Gliwice
+Published on: 21/10/2025
+
+News ------------------------
+today it's shitty
+Wroclaw
+Published on: 21/10/2025
+
+Book Review ------------------------
+harry Potter is judt Good
+Rate: 3/5
+Published on: 22/10/2025
+
+Book Review ------------------------
+LOTR is the worst!
+Rate: 1/5
+Published on: 22/10/2025
+
+News ------------------------
+Today it's crazy pretty weather!Woow.
+Strzyzowice
+Published on: 22/10/2025
+
+Book Review ------------------------
+I like the lotr saga! Looool
+Rate: 5/5
+Published on: 22/10/2025
+
