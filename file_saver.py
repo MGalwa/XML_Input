@@ -1,11 +1,12 @@
 # Magdalena Galwa
-# 26/11/2025
+# 15/10/2025
 # Description:
 #Homework:
-    # Expand previous Homework 5/6/7/8/9 with additional class, which allow to save records into database:
-    # 1. Different types of records require different data tables
-    # 2. New record creates new row in data table
-    # 3. Implement “no duplicate” check.
+    # Expand previous Homework 5/6/7/8 with additional class, which allow to provide records by XML file:
+    # Define your input format (one or many records)
+    # Default folder or user provided file path
+    # Remove file if it was successfully processed
+
 
 # Import statements
 import os  # Provides functions to interact with the operating system (e.g., file operations)
@@ -14,7 +15,7 @@ import os  # Provides functions to interact with the operating system (e.g., fil
 class FileSaver:
     def __init__(self):
         # Path to the output file where records will be saved
-        self.output_file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input\output.txt"
+        self.output_file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input\output.txt"
 
     def save_parameters(self, record):
         # Save a single record to the output file
@@ -43,7 +44,7 @@ class FileSaver:
 
     def remove_txt_file(self):
         # Delete the input TXT file after processing
-        file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input\input.txt"
+        file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input\input.txt"
         try:
             os.remove(file_path)  # Remove the file from the directory
             print(f"Input TXT file '{file_path}' has been successfully deleted.")
@@ -52,7 +53,7 @@ class FileSaver:
 
     def remove_json_file(self):
         # Delete the input JSON file after processing
-        file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input\input.json"
+        file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input\input.json"
         try:
             os.remove(file_path)  # Remove the file from the directory
             print(f"Input JSON file '{file_path}' has been successfully deleted.")
@@ -61,7 +62,7 @@ class FileSaver:
 
     def remove_xml_file(self):
         # Delete the input XML file after processing
-        file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\DB_Input\input.xml"
+        file_path = r"C:\Users\MagdalenaGalwa\Desktop\Nauka\Python\Python_Projects\XML_Input\input.xml"
         try:
             os.remove(file_path)  # Remove the file from the directory
             print(f"Input XML file '{file_path}' has been successfully deleted.")

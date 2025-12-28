@@ -1,11 +1,12 @@
 # Magdalena Galwa
-# 26/11/2025
+# 15/10/2025
 # Description:
 #Homework:
-    # Expand previous Homework 5/6/7/8/9 with additional class, which allow to save records into database:
-    # 1. Different types of records require different data tables
-    # 2. New record creates new row in data table
-    # 3. Implement “no duplicate” check.
+    # Expand previous Homework 5/6/7/8 with additional class, which allow to provide records by XML file:
+    # Define your input format (one or many records)
+    # Default folder or user provided file path
+    # Remove file if it was successfully processed
+
 
 # Import statements
 from datetime import datetime  # Used for working with dates and times
